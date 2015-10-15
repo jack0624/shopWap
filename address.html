@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>新增收货地址-欢乐购</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/newwap.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body style="background:#f0eff4">
+<header class="wap-header">
+  <div class="wap-topbar">
+    <div class="h-left"><a href="javascript:void();" title="返回"></a></div>
+    <div class="h-center">
+      <h1>新增收货地址</h1>
+    </div>
+    <div class="search_nav_icon"><a href="index.html">首页</a></div>
+  </div>
+</header>
+<section class="address-main">
+  <form id="addressform" class="address-form" method="post" novalidate>
+    <div class="field-address  clearfix">
+      <dl>
+        <dd><span class="form_ld">姓名：</span><span class="form_rd">
+          <input name="consignee" type="text" value="" maxlength="50" class="text_input">
+          </span></dd>
+        <dd><span class="form_ld">手机：</span><span class="form_rd">
+          <input name="mobile" type="text" value="" maxlength="11" class="text_input">
+          </span></dd>
+        <dd><span class="form_ld">省份：</span> <span class="form_rd">
+          <select id="province" name="province" onchange="getShopArea(this, 'city')" class="text_select">
+            <option value="0">请选择省市</option>
+            <option value="101101">北京市</option>
+            <option value="101102">天津市</option>
+            <option value="101103">河北省</option>
+            <option value="101104">山西省</option>
+            <option value="101105">内蒙古自治区</option>
+            <option value="102101">辽宁省</option>
+            <option value="102102">吉林省</option>
+            <option value="102103">黑龙江省</option>
+            <option value="103101">上海市</option>
+            <option value="103102">江苏省</option>
+            <option value="103103">浙江省</option>
+            <option value="103104">安徽省</option>
+            <option value="103105">福建省</option>
+            <option value="103106">江西省</option>
+            <option value="103107">山东省</option>
+            <option value="104101">河南省</option>
+            <option value="104102">湖北省</option>
+            <option value="104103">湖南省</option>
+            <option value="104104">广东省</option>
+            <option value="104105">广西壮族自治区</option>
+            <option value="104106">海南省</option>
+            <option value="105100">重庆市</option>
+            <option value="105101">四川省</option>
+            <option value="105102">贵州省</option>
+            <option value="105103">云南省</option>
+            <option value="105104">西藏自治区</option>
+            <option value="106101">陕西省</option>
+            <option value="106102">甘肃省</option>
+            <option value="106103">青海省</option>
+            <option value="106104">宁夏回族自治区</option>
+            <option value="106105">新疆维吾尔自治区</option>
+          </select>
+          </span> <span class="i_up_arrow"></span></dd>
+        <dd><span class="form_ld">城市：</span> <span class="form_rd">
+          <select id="city" name="city" onchange="getShopArea(this, 'district')" class="text_select">
+            <option value="0">请选择城市</option>
+          </select>
+          </span> <span class="i_up_arrow"></span></dd>
+        <dd><span class="form_ld">区县：</span> <span class="form_rd">
+          <select id="district" name="district" onchange="getShopArea(this, 'street');getPostcode()" class="text_select">
+            <option value="0">请选择区/县</option>
+          </select>
+          </span> <span class="i_up_arrow"></span></dd>
+        <dd><span class="form_ld">街道：</span> <span class="form_rd">
+          <select id="street" name="street" class="text_select" oncha="">
+            <option value="0">请选择</option>
+            <option value="-1">无</option>
+          </select>
+          </span><span class="i_up_arrow"></span></dd>
+        <dd><span class="form_ld">邮编：</span><span class="form_rd">
+          <input name="postcode" type="text" value="" maxlength="6" class="text_input" id="postcode">
+          </span></dd>
+        <dd><span>详情地址：</span>
+          <textarea name="address" rows="5" class="textarea_input textarea_address"></textarea>
+        </dd>
+      </dl>
+    </div>
+    <div class="field submit-btn">
+      <input type="button" id="addressBtn" class="adress-btn btn-default" value="保存" onClick="location.href='addressList.html'">
+    </div>
+  </form>
+</section>
+<footer id="footer">
+  <div class="f-ch-cp">
+    <div class="item"><a href="#">首页</a><a href="#">帮助中心</a><a href="#">网站地图</a></div>
+    <div class="item"><span class="copyright_1">Copyright 2012-2015hlgo.com 版权所有</span></div>
+  </div>
+</footer>
+</body>
+</html>

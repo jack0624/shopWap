@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>欢乐购</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/newwap.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<section class="sectionWrap">   
+<header id="header" class="u-header clearfix">
+    <div class="u-hd-logo f-left"><a href="index.html"><img src="images/logo.png" width="188"/></a></div>
+    <!--header右边入口 -->
+    <div class="u-hd-right f-right">
+         <a href="order.html"><span class="i-hd-order"></span></a>
+    </div>
+    <div class="u-hd-right f-right">
+        <a href="user.html" onclick="setBackAct('topHeaderUserHome');" id="reddot">
+            <span class="i-hd-logn"><i class="u-icon-px i-hd-reddot"></i></span>
+            <!--<em>1</em>-->
+        </a>
+    </div>
+    <div class="u-hd-right f-right">
+        <a href="cart.html" onclick="setBackAct('topHeaderCart')">
+        <span class="i-hd-cart"></span>
+        </a>
+    </div>
+</header>
+    
+<nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="true">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar">1111</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">欢乐购</a>
+        </div>
+        <div class="navbar-collapse collapse on" id="bs-example-navbar-collapse-9" aria-expanded="ture">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="#">美妆</a></li>
+                <li><a href="#">预售</a></li>
+                <li><a href="#">帮助</a></li>
+            </ul>
+        </div>
+</nav>
+
+<section class="page-content">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/banner1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="images/banner2.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="tabcommon">
+        <div class="tabcommon-title clearfix">
+            <div class="list-tit f-left">秒杀专场</div>
+            <a href="#" class="tabcommon-title-more f-right">查看全部</a>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="#" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+       <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="product.html" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div> 
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="product.html" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="product.html" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabcommon">
+        <div class="tabcommon-title clearfix">
+            <div class="list-tit f-left">下期预告</div>
+            <a href="product.html" class="tabcommon-title-more f-right">查看全部</a>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="product.html" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <div class="thumbnail">
+          <a href="product.html" target="_blank"><img src="http://cdnweb.b5m.com/web/cmsphp/wapproduct/201505/b4711f373c81516192829.jpg_400x400" alt=""/></a>
+          <div class="caption">
+            <h5 class="big">JAM LTD 杰姆保加利亚进口玫瑰酱680g纯玫瑰花瓣 玫瑰茶酱玫瑰茶 冲饮</h5>
+            <p class="pricebox clearfix"><span class="grallyprice f-left">¥895</span><span class="markprice">¥1795</span></p>
+            <p><a href="product.html" class="btn btn-default" role="button">立即购买</a> <a href="#" class="btn btn-primary" role="button">加入购物车</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-default navbar-fixed-bottom newwrap-nav">
+    <div class="box">
+        <a href="javascript:;" class="home cur">
+            <img src="images/icon-home.png">
+            <span class="nav-title">首页</span>
+        </a>
+       <!-- <a href="#" class="allcat">
+            <img src="images/icon-spike.png">
+            <span class="nav-title">秒杀</span>
+        </a>-->
+        <a href="cart.html" class="buycar">
+            <img src="images/icon-cart.png">
+            <span class="nav-title">购物车</span>
+        </a>
+        <a href="user.html" class="personal">
+            <img src="images/icon-personal.png">
+            <span class="nav-title">我的</span>
+        </a>
+    </div>
+</nav>
+</section>
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

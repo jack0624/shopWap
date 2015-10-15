@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>商品详情-欢乐购</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/newwap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+jQuery(function($) {
+    $(".touchslider").touchSlider({
+        container: this,
+        duration: 300, // 动画速度
+        delay: 3000, // 动画时间间隔
+        margin: 0,
+        mouseTouch: true,
+        namespace: "touchslider",
+        next: ".touchslider-next", // next 样式指定
+        pagination: ".touchslider-nav-item",
+        currentClass: "touchslider-nav-item-current", // current 样式指定
+        prev: ".touchslider-prev", // prev 样式指定
+        //scroller: viewport.children(),
+        autoplay: true, // 自动播放
+        viewport: ".touchslider-viewport"
+    });
+	$(".touchslider").data("touchslider").stop(); // stop the slider
+    $(".touchslider").data("touchslider").start(); // start the slider
+});
+</script>
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="javascript:void();" title="返回"></a></div>
+        <div class="h-center">
+          <h1>商品详情</h1>
+        </div>
+        <div class="search_nav_icon"><a href="index.html">首页</a></div>
+    </div>
+</header>
+<section class="warp-container-box">
+    <div class="touchslider touchslider-demo">
+        <div class="touchslider-viewport" style="width:640px;overflow:hidden">
+            <div>
+                <div class="touchslider-item"><img alt="" width="640" height="640" src="http://img10.360buyimg.com/n0/jfs/t520/252/613854220/152099/332f98c2/5476c7ecNf937147a.jpg"/></div>
+                <div class="touchslider-item"><img alt="" width="640" height="640" src="http://img10.360buyimg.com/n0/jfs/t625/310/518632518/109303/3b46934d/546effb0N3c671e22.jpg"/></div>
+                <div class="touchslider-item"><img alt="" width="640" height="640" src="http://img10.360buyimg.com/n0/jfs/t625/310/518632518/109303/3b46934d/546effb0N3c671e22.jpg"/></div>
+            </div>
+        </div>
+        <div class="touchslider-page">
+                <span class="touchslider-nav-item touchslider-nav-item-current">1</span>
+                <span class="touchslider-nav-item">2</span>
+                <span class="touchslider-nav-item">3</span>
+        </div>
+    </div>
+
+    <div class="goods-detail clearfix"> 
+        <div class="goods-detail-promotions clearfix"><span>满199减100，上不封顶</span></div> 
+        <div class="goods-detail-box">
+            <h1 class="goods-tit">色彩至尚精致眼部套装2件套</h1>
+            <div class="goods-subtitle">Dior 迪奥曾跟很多服饰品牌联手，根据季节性以及服饰的流行性推出限量发售的产品。Dior对于时
+        尚敏感的女性来说，具有相当的魅力。限定品的稀少性以及高话题性，总是会引来不少新的爱用者。</div> 
+            <div class="goods_detail_box_wrap clearfix">
+                <div class="goods-detail-box-fl fl">
+                    <span class="goods-now-price">现价:￥29.90</span>  
+                    <span class="goods-old-price">原价:￥129.00</span>
+                    <span class="goods-source">2.3折</span>
+                </div>
+                <div class="goods-detail-box-fr fr">
+                    <a class="sc" href="javascript:void(0);"><i></i><span>收藏</span></a>
+                    <a class="fx" href="javascript:void(0);"><i></i><span>分享</span></a>
+                </div>
+            </div>
+            <div class="good_salesize clearfix">
+                  <div class="u-title-line"><span class="u-title">尺码</span></div>
+                  <ul class="good_sizechioce" data-favoritessize="true">
+                        <li class="choose select">S</li>
+                        <li class="choose">M</li>
+                        <li class="choose">XXL</li>
+                  </ul>
+            </div>
+            <div class="good_salesize clearfix ">
+                  <div class="u-title-line"><span class="u-title">颜色</span></div>
+                  <ul class="good_sizechioce clearfix">
+                        <li class="choose select">红色</li>
+                        <li class="choose">深灰色</li>
+                        <li class="choose">紫色</li>
+                  </ul>
+            </div>
+            <div class="good_salesize clearfix ">
+                  <div class="u-title-line"><span class="u-title">数量</span></div>
+                  <ul class="good_sizechioce clearfix">
+                        <li class="num choose fl" style="width:100px">
+                            <a href="javascript:;" class="sub fl" sub="">-</a>
+                            <input class="in fl" type="text" readonly value="1">
+                            <a href="javascript:;" class="add fl" add="">+</a>
+                        </li>
+                  </ul>
+            </div> 
+        </div>  
+        <div class="product_detail">
+            <div class="tab_content pro_detail_info">
+              <table class="">
+                    <tr><td class="pr_left_attr">商品名称：</td><td class="pr_right_attr"><p>色彩至尚精致眼部套装4件套</p></td></tr>
+                    <tr><td class="pr_left_attr">品牌名称：</td><td class="pr_right_attr"><p>卡姿兰Carslan</p></td></tr>
+                    <tr><td class="pr_left_attr">商品分类：</td><td class="pr_right_attr"><p>彩妆套装</p></td></tr>
+                    <tr><td class="pr_left_attr">产地：</td><td class="pr_right_attr"><p>广东</p></td></tr>
+                    <tr><td class="pr_left_attr">套装明细：</td><td class="pr_right_attr"><p>大眼睛持久液体眼线笔(黑色)2ml+大眼睛俏眉立体眉粉2#（棕色）2.2g+黑密度大眼睛睫毛膏4.8g+雪肌均衡保湿眼唇卸妆液 80ml</p></td></tr>
+                    <tr><td class="pr_left_attr">有效期：</td><td class="pr_right_attr"><p>三年（具体以收到实物为准）</p></td></tr>
+                    <tr><td class="pr_left_attr">规格：</td><td class="pr_right_attr"><p >均码</p></td></tr>
+                    <tr><td class="pr_left_attr">适合人群：</td><td class="pr_right_attr"><p>女</p></td></tr>
+              </table>
+              <p><img src="http://c.vimage1.com/upload/merchandise/221811/KZL-40050714-110_2.jpg" width="665"></p>      
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+      <div class="f-ch-cp">
+            <div class="item"><a href="#">首页</a><a href="#">帮助中心</a><a href="#">网站地图</a></div>
+            <div class="item"><span class="copyright_1">Copyright 2012-2015hlgo.com 版权所有</span></div>
+      </div>
+    </footer>
+    <div class="navbar navbar-default navbar-fixed-bottom botwrap-nav">
+        <div class="nav-container-fixed">
+            <div class="navbar-gobuy">
+                <a class="btn btn-default" href="cart.html">立即购买</a>
+            </div>
+            <div class="navbar-gocart">
+                <a class="btn btn-default" href="javascript:;">加入购物车</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

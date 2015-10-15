@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>注册-欢乐购</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/newwap.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="javascript:void();" title="返回"></a></div>
+        <div class="h-center">
+            <h1>用户注册</h1>
+        </div>
+        <div class="search_nav_icon"><a href="index.html">首页</a></div>
+    </div>
+</header>
+<section class="reg-main">
+    <form id="login-form" class="reg-form" method="post" novalidate>
+        <div class="field-login field-reg-username clearfix">
+            <div class="field-relative">
+                <input class="reg-input" type="text" name="userName" placeholder="请输入邮箱/用户名" value="" autocomplete="off"> 
+                <a href="javascript:void(0);" class="icon-reg reg-empty" title="清空" style="display: none;">清空</a>
+            </div>
+        </div>
+        <div class="field-login field-reg-password  clearfix">
+            <div class="field-relativ">
+                <input class="reg-input code-input reg-disabled fl" type="text" name="code" placeholder="请输入验证码" value="" autocomplete="off" onpaste="return false;" oncopy="return false;" oncut="return false;"> 
+                <a href="javascript:void(0);" class="icon-reg reg-empty" title="清空" style="display: none;">清空</a>
+                <input id="getCode" type="button" class="reg-btn btn-default get-code-register fr" value="获取验证码" />
+            </div>
+        </div>
+        <div class="field-login field-reg-password clearfix">
+            <div class="field-relative">
+                <input class="reg-input" type="password" name="password" placeholder="请输入密码" value="" autocomplete="off" onpaste="return false;" oncopy="return false;" oncut="return false;"> 
+                <a href="javascript:void(0);" class="icon-reg reg-empty" title="清空" style="display: none;">清空</a>
+            </div>
+        </div>
+        <div class="field protocol">
+            <input id="protocol" type="checkbox" checked="checked">
+            <label for="protocol">我已阅读并同意<a id="toProtocol" href="javascript:void(0);">《欢乐购用户注册协议》</a></label>
+        </div>
+        <div class="field submit-btn">
+            <input type="button" id="regBtn" class="reg-btn btn-default" value="立即注册">
+        </div>
+    </form>
+</section>
+
+<footer id="footer">
+    <div class="f-ch-cp">
+        <div class="item"><a href="#">首页</a><a href="#">帮助中心</a><a href="#">网站地图</a></div>
+        <div class="item"><span class="copyright_1">Copyright 2012-2015hlgo.com 版权所有</span></div>
+    </div>
+</footer>
+</body>
+</html>

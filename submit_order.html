@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>确认订单结算-欢乐购</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/newwap.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<header class="wap-header">
+    <div class="wap-topbar">
+        <div class="h-left"><a href="javascript:void();" title="返回"></a></div>
+        <div class="h-center">
+          <h1>结算</h1>
+        </div>
+        <div class="search_nav_icon"><a href="index.html">首页</a></div>
+    </div>
+</header>
+<section class="warp-container-box">
+    <div class="panel-body info-address">
+        <div class="title-address">
+        <a href="addressList.html">
+            <span class="icon-arrow-right"></span>
+            <p class="text-name">王先生<span class="text-phonenumber">18818061531</span></p>
+            <p class="text--address">上海市上海市徐汇区徐家汇街道乐山路33号</p>
+        </a>
+        </div>
+    </div>
+    <!--商品清单-->
+    <div class="panel-body info-goods">
+        <div class="panel-head-title"><h2 class="panel-title">商品清单</h2></div>
+        <ul class="nav-list-goods">
+          <li>
+            <a href="javascript:;">
+                <span class="pic">
+                    <img src="http://a1.vimage1.com/upload/merchandise/394364/ERKE-11114420462-603-5.jpg" width="50" height="50">
+                </span>
+                <span class="tit"><strong>￥9.80<br>x1</strong>运动头巾无缝魔术百变头巾户外骑行围脖...</span>
+                <p>尺码：50ml， 颜色：红色</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+                <span class="pic">
+                    <img src="http://a1.vimage1.com/upload/merchandise/394364/ERKE-11114420462-603-5.jpg" width="50" height="50">
+                </span>
+                <span class="tit"><strong>￥9.80<br>x1</strong>运动头巾无缝魔术百变头巾户外骑行围脖...</span>
+                <p>尺码：50ml， 颜色：红色</p>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+                <span class="pic">
+                    <img src="http://a1.vimage1.com/upload/merchandise/394364/ERKE-11114420462-603-5.jpg" width="50" height="50">
+                </span>
+                <span class="tit"><strong>￥9.80<br>x1</strong>运动头巾无缝魔术百变头巾户外骑行围脖...</span>
+                <p>尺码：50ml， 颜色：红色</p>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <!-- 支付方式-->
+    <div class="panel-body info-payfor">
+        <div class="panel-head-title"><h2 class="panel-title">支付方式</h2></div>
+        <ul class="nav-list-payfor">
+          <li>
+            <span class="icon-radio active"></span>
+            <span class="icon-pay-wbwap"></span>
+            <p>微博支付</p>
+            <input name="pay_type" value="50" type="radio" class="hide" data-pay-id="1001">
+          </li>
+          <li>
+            <span class="icon-radio"></span>
+            <span class="icon-pay-wxwap"></span>
+            <p>微信支付</p>
+            <input name="pay_type" value="50" type="radio" class="hide" data-pay-id="1002">
+          </li>
+          <li>
+            <span class="icon-radio"></span>
+            <span class="icon-pay-zfbwap"></span>
+            <p>支付宝</p>
+            <input name="pay_type" value="50" type="radio" class="hide" data-pay-id="1003">
+          </li>
+          <li>
+            <span class="icon-radio"></span>
+            <span class="icon-pay-ylkpay"></span>
+            <p>银联支付</p>
+            <input name="pay_type" value="50" type="radio" class="hide" data-pay-id="1004">
+          </li>
+        </ul>
+    </div>
+    <!--订单金额-->
+    <div class="panel-body info-total">
+        <div class="panel-head-title"><h2 class="panel-title">支付信息</h2></div>
+        <ul class="nav-list-totle">
+          <li>商品金额：<span class="f-right">¥1196.00</span></li>
+          <li>商品优惠：<span class="f-right font-blue">¥－4.00</span></li>
+          <li>发货运费：<span class="f-right">¥8.00</span></li>
+          <li class="order-total-money"><span class="big">订单总额：</span><span class="f-right font-red">¥1200.00</span></li>
+        </ul>
+    </div>
+    <!--买家留言-->
+    <div class="panel-body info-message">
+        <div class="panel-head-title"><h2 class="panel-title">买家留言</h2></div>
+        <ul class="nav-list-message">
+          <li>
+          <textarea placeholder="买家留言，限45字" maxlength="45" name="orderInfo[userRemark]" id="userRemark"></textarea>
+          </li>
+        </ul>
+    </div>
+    <footer id="footer">
+      <div class="f-ch-cp">
+            <div class="item"><a href="#">首页</a><a href="#">帮助中心</a><a href="#">网站地图</a></div>
+            <div class="item"><span class="copyright_1">Copyright 2012-2015hlgo.com 版权所有</span></div>
+      </div>
+    </footer>
+    <div class="navbar navbar-default navbar-fixed-bottom botwrap-nav">
+        <div class="nav-container-fixed cartGoodsTotal-price">
+            <div class="navbar-submit-order">
+                <a class="btn btn-default" href="#">提交订单</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
